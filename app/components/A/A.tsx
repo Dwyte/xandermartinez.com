@@ -1,11 +1,27 @@
 export function A({ children, ...rest }: React.ComponentPropsWithoutRef<"a">) {
   return (
     <a
-      className="underline underline-offset-2 hover:text-gray-200 transition-colors cursor-pointer"
+      className="underline underline-offset-3 hover:text-gray-200 transition-colors cursor-pointer inline-flex items-center"
       target="_blank"
       {...rest}
     >
-      {children}
+      <span>{children}</span>
+
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="18"
+        height="18"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        className="lucide lucide-arrow-up-right-icon lucide-arrow-up-right inline"
+      >
+        <path d="M7 7h10v10" />
+        <path d="M7 17 17 7" />
+      </svg>
     </a>
   );
 }
