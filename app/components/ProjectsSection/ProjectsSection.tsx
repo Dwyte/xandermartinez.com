@@ -5,7 +5,7 @@ import { A } from "../A";
 export function ProjectsSection() {
   return (
     <div className="w-[100%] max-w-2xl flex flex-col gap-4">
-      <NumberedHeader number={"10"} content="Projects" />
+      <NumberedHeader number={2} content="Projects" />
       <div className="flex flex-col gap-4">
         {SIDE_PROJECTS.map((project) => (
           <div className="flex flex-col gap-2" key={project.id}>
