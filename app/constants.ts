@@ -23,3 +23,28 @@ export const WORK_EXPRIENCES: WorkExperience[] = [
     summary: "Optimized Business Operations through personalized WebApps",
   },
 ];
+
+export const SIDE_PROJECTS: SideProject[] = [
+  {
+    id: 0,
+    title: "Notflix",
+    summary:
+      "The most popular and authoritative source for movie, TV and celebrity content. ",
+    techstack: ["react"],
+    liveUrl: "https://movie-app-one-sandy-27.vercel.app/",
+  },
+  {
+    id: 1,
+    title: "Sorting, Visualized",
+    summary: "A slick Sorting Algorithms Visualizer",
+    techstack: ["react"],
+    liveUrl: "https://dwyte.github.io/sorting-visualized/",
+  },
+  {
+    id: 2,
+    title: "IAM",
+    summary: "A blockchain-based digital credentials system.",
+    techstack: ["react"],
+    liveUrl: "https://iam-web-client.herokuapp.com/",
+  },
+];

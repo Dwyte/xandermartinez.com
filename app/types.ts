@@ -6,5 +6,14 @@ type WorkExperience = {
   location: string;
   toDate: Date | "Present";
   summary: string;
-  accomplishments?: { id: number; content: string }[];
+  accomplishments?: string[];
+};
+
+type SideProject = {
+  id: number;
+  title: string;
+  liveUrl?: string;
+  sourceUrl?: string;
+  summary: string;
+  techstack?: string[];
 };
