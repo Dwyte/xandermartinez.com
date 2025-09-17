@@ -5,6 +5,12 @@
   --foreground: #ededed;
 }
 
+@layer base {
+  *::selection {
+    @apply bg-gray-100 text-gray-800;
+  }
+}
+
 @layer components {
   .section {
     @apply w-[100%] max-w-xl flex flex-col gap-10;
