@@ -1,18 +1,21 @@
 import { WORK_EXPRIENCES } from "@/app/constants";
 import { NumberedHeader } from "../NumberedHeader";
+import { List, ListItem } from "../List";
 
 export function WorkSection() {
   return (
-    <div className="w-[100%] max-w-2xl flex flex-col gap-4">
+    <div className="w-[100%] max-w-2xl flex flex-col gap-12">
       <NumberedHeader number={1} content="Work" />
-      <div className="flex flex-col gap-4">
+      <List className="flex flex-col gap-4">
         {WORK_EXPRIENCES.map((work) => (
-          <div className="flex flex-col gap-2" key={work.id}>
-            <h3 className="text-xl">{work.company}</h3>
-            <p className="text-gray-500">{work.summary}</p>
-          </div>
+          <ListItem key={work.id}>
+            <div className="flex flex-col gap-2">
+              <h3 className="text-xl font-semibold">{work.company}</h3>
+              <p>{work.summary}</p>
+            </div>
+          </ListItem>
         ))}
-      </div>
+      </List>
     </div>
   );
 }
