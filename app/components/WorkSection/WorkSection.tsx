@@ -1,6 +1,7 @@
 import { WORK_EXPRIENCES } from "@/app/constants";
 import { NumberedHeader } from "../NumberedHeader";
 import { List, ListItem } from "../List";
+import { A } from "../A";
 
 export function WorkItem({ work }: { work: WorkExperience }) {
   const fromDateStr = work.fromDate.toLocaleDateString("en-US", {
@@ -14,10 +15,16 @@ export function WorkItem({ work }: { work: WorkExperience }) {
           year: "numeric",
         });
 
+  const header = work.url ? (
+    <A href={work.url}>{work.company}</A>
+  ) : (
+    work.company
+  );
+
   return (
     <div className="group/work-item flex flex-col gap-1">
       <div className="flex items-center justify-between gap-2 flex-row">
-        <h3 className="text-lg font-semibold">{work.company}</h3>
+        <h3 className="text-lg font-semibold">{header}</h3>
         <p className="mt-1 opacity-0 text-xs group-hover/work-item:opacity-100 transition-opacity">
           {fromDateStr} – {toDateStr}
         </p>

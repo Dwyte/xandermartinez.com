@@ -4,6 +4,7 @@ type WorkExperience = {
   position: string;
   fromDate: Date;
   location: string;
+  url?: string;
   toDate: Date | "Present";
   summary: string;
   accomplishments?: string[];

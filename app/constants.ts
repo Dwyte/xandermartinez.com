@@ -9,6 +9,7 @@ export const WORK_EXPRIENCES: WorkExperience[] = [
     fromDate: new Date("November 2022"),
     toDate: "Present",
     company: "DFAB Shop",
+    url: "https://shopee.ph/the_fabshoppe",
     location: "Remote",
     position: "Owner, Web Developer",
     summary: "Streamlined Business Operations through personalized WebApps",
