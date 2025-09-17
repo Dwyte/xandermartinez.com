@@ -1,7 +1,12 @@
+import clsx from "clsx";
+
 export function A({ children, ...rest }: React.ComponentPropsWithoutRef<"a">) {
   return (
     <a
-      className="decoration-1 underline underline-offset-4 hover:text-gray-200 transition-colors cursor-pointer inline-flex items-center"
+      className={clsx(
+        "decoration-1 underline underline-offset-4 hover:text-gray-200 transition-colors cursor-pointer inline-flex items-center",
+        rest.className
+      )}
       target="_blank"
       {...rest}
     >

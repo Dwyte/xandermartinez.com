@@ -39,7 +39,7 @@ export function WorkSection() {
   return (
     <div className="section">
       <NumberedHeader number={1} content="Work" />
-      <List className="flex flex-col gap-4">
+      <List>
         {WORK_EXPRIENCES.map((work) => (
           <ListItem key={work.id}>
             <WorkItem work={work} />
