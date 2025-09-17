@@ -10,8 +10,11 @@ export function WorkSection() {
         {WORK_EXPRIENCES.map((work) => (
           <ListItem key={work.id}>
             <div className="flex flex-col gap-2">
-              <h3 className="text-xl font-semibold">{work.company}</h3>
-              <p>{work.summary}</p>
+              <h3 className="text-xl font-semibold">
+                {work.position} · {work.company}
+              </h3>
+
+              <p className="text-base">{work.summary}</p>
             </div>
           </ListItem>
         ))}

@@ -10,7 +10,7 @@ export const WORK_EXPRIENCES: WorkExperience[] = [
     toDate: "Present",
     company: "DFAB Shop",
     location: "Remote",
-    position: "Owner & Web Developer",
+    position: "Owner, Web Developer",
     summary: "Streamlined Business Operations through personalized WebApps",
   },
   {
