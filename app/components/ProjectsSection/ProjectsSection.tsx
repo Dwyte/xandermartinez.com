@@ -2,6 +2,7 @@ import { SIDE_PROJECTS } from "@/app/constants";
 import { NumberedHeader } from "../NumberedHeader";
 import { A } from "../A";
 import { List, ListItem } from "../List";
+import { StyledLink } from "../StyledLink";
 
 export function ProjectsSection() {
   return (
@@ -18,6 +19,10 @@ export function ProjectsSection() {
             </div>
           </ListItem>
         ))}
+
+        <StyledLink className="text-sm" href="/projects">
+          View Full Archive
+        </StyledLink>
       </List>
     </div>
   );

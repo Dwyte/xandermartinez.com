@@ -2,6 +2,7 @@ import { WORK_EXPRIENCES } from "@/app/constants";
 import { NumberedHeader } from "../NumberedHeader";
 import { List, ListItem } from "../List";
 import { A } from "../A";
+import { StyledLink } from "../StyledLink";
 
 export function WorkItem({ work }: { work: WorkExperience }) {
   const fromDateStr = work.fromDate.toLocaleDateString("en-US", {
@@ -45,6 +46,9 @@ export function WorkSection() {
             <WorkItem work={work} />
           </ListItem>
         ))}
+        <StyledLink className="text-sm" href="/work">
+          View Full Timeline
+        </StyledLink>
       </List>
     </div>
   );
