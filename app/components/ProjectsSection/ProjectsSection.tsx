@@ -5,7 +5,7 @@ import { List, ListItem } from "../List";
 
 export function ProjectsSection() {
   return (
-    <div className="w-[100%] max-w-2xl flex flex-col gap-4">
+    <div className="section">
       <NumberedHeader number={2} content="Projects" />
       <List>
         {SIDE_PROJECTS.map((project) => (

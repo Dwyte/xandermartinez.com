@@ -4,7 +4,7 @@ import { List, ListItem } from "../List";
 
 export function WorkSection() {
   return (
-    <div className="w-[100%] max-w-2xl flex flex-col gap-12">
+    <div className="section">
       <NumberedHeader number={1} content="Work" />
       <List className="flex flex-col gap-4">
         {WORK_EXPRIENCES.map((work) => (
