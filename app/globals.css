@@ -17,7 +17,7 @@
   }
 
   .link {
-    @apply cursor-pointer inline-flex items-center gap-1 transition-colors hover:underline decoration-1 underline-offset-4;
+    @apply cursor-pointer inline-flex items-center gap-1 hover:underline decoration-1 underline-offset-4;
   }
 }
 
