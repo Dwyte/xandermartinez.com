@@ -8,7 +8,7 @@ export default function Home() {
     <div className="flex flex-col items-center py-42 px-8">
       <div className="flex flex-col gap-20">
         <HeroSection />
-        <div className="flex max-w-2xl gap-16">
+        <div className="flex flex-col max-w-2xl gap-20 sm:flex-row sm:gap-16">
           <WorkSection />
           <ProjectsSection />
         </div>
