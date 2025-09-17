@@ -3,7 +3,7 @@ import { A } from "../A";
 
 export function HeroSection() {
   return (
-    <div className="max-w-2xl flex flex-col gap-2">
+    <div className="section gap-2">
       <h1 className="text-lg text-gray-500">{TITLE}</h1>
       <p className="text-2xl">
         Developing thoughtful web experiences — with precision, maintainability,

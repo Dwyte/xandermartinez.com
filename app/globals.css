@@ -7,7 +7,7 @@
 
 @layer components {
   .section {
-    @apply w-[100%] max-w-2xl flex flex-col gap-10;
+    @apply w-[100%] max-w-xl flex flex-col gap-10;
   }
 }
 
