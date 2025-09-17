@@ -10,7 +10,7 @@ export function ProjectsSection() {
       <List>
         {SIDE_PROJECTS.map((project) => (
           <ListItem key={project.id}>
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-1">
               <h3 className="text-lg font-semibold">
                 <A href={project.liveUrl}>{project.title}</A>
               </h3>
