@@ -1,11 +1,11 @@
 export function A({ children, ...rest }: React.ComponentPropsWithoutRef<"a">) {
   return (
     <a
-      className="underline underline-offset-3 hover:text-gray-200 transition-colors cursor-pointer inline-flex items-center"
+      className="decoration-1 underline underline-offset-4 hover:text-gray-200 transition-colors cursor-pointer inline-flex items-center"
       target="_blank"
       {...rest}
     >
-      <span>{children}</span>
+      <span>{children} </span>
 
       <svg
         xmlns="http://www.w3.org/2000/svg"
