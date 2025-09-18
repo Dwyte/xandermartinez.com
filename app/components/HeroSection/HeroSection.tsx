@@ -1,5 +1,6 @@
-import { TITLE, EMAIL_URL, LINKEDIN_URL, GITHUB_URL } from "@/app/constants";
+import { TITLE, LINKEDIN_URL, GITHUB_URL } from "@/app/constants";
 import { A } from "../A";
+import { Email } from "../Email";
 
 export function HeroSection() {
   return (
@@ -10,9 +11,8 @@ export function HeroSection() {
         and performance.
       </p>
       <p className="text-lg text-gray-500">
-        Get in touch via <A href={EMAIL_URL}>Email</A> or{" "}
-        <A href={LINKEDIN_URL}>LinkedIn</A>, see my code on{" "}
-        <A href={GITHUB_URL}>Github</A>.
+        Get in touch via <Email /> or <A href={LINKEDIN_URL}>LinkedIn</A>, see
+        my code on <A href={GITHUB_URL}>Github</A>.
       </p>
     </div>
   );
