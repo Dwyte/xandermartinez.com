@@ -1,8 +1,10 @@
 "use client";
 
-import { EMAIL } from "@/app/constants";
-import { Mail, SendHorizonal } from "lucide-react";
 import React, { useEffect, useRef, useState } from "react";
+import { Mail, SendHorizonal } from "lucide-react";
+import clsx from "clsx";
+
+import { EMAIL } from "@/app/constants";
 
 function isMouseEventWithinRect(ev: MouseEvent, rect: DOMRect) {
   const evWithinRectX = ev.pageX >= rect.x && ev.pageX <= rect.x + rect.width;
@@ -11,13 +13,26 @@ function isMouseEventWithinRect(ev: MouseEvent, rect: DOMRect) {
 }
 
 export function Email() {
-  const [isActive, setIsActive] = useState(false);
-
   const buttonRef = useRef<HTMLButtonElement | null>(null);
   const previewRef = useRef<HTMLElement | null>(null);
 
-  function handleActivate() {
-    setIsActive((prev) => !prev);
+  const [isActive, setIsActive] = useState(false);
+  const [isPreviewMounted, setIsPreviewMounted] = useState(false);
+
+  const previewTimeout = useRef<number>(0);
+
+  function hidePreview() {
+    setIsActive(false);
+    previewTimeout.current = window.setTimeout(
+      () => setIsPreviewMounted(false),
+      300
+    );
+  }
+
+  function showPreview() {
+    clearTimeout(previewTimeout.current);
+    setIsPreviewMounted(true);
+    requestAnimationFrame(() => setIsActive(true));
   }
 
   useEffect(() => {
@@ -31,7 +46,7 @@ export function Email() {
         !isMouseEventWithinRect(ev, previewRect) &&
         !isMouseEventWithinRect(ev, buttonRect)
       ) {
-        setIsActive(false);
+        hidePreview();
       }
     };
 
@@ -43,16 +58,22 @@ export function Email() {
     <span className="relative">
       <button
         ref={buttonRef}
-        onClick={handleActivate}
+        onClick={isActive ? hidePreview : showPreview}
         className={"link hover:text-gray-100"}
       >
         Email
         <Mail stroke="currentColor" strokeWidth={2} width="1em" />
       </button>
-      {isActive && (
+
+      {isPreviewMounted && (
         <span
           ref={previewRef}
-          className="flex text-gray-400 bg-gray-950 absolute bottom-[-54px] left-[50%] translate-x-[-50%]"
+          className={clsx(
+            "flex text-gray-400 bg-gray-950 absolute bottom-[-54px] left-[50%] translate-x-[-50%] transition-all duration-300",
+            isActive
+              ? "translate-y-[0%] opacity-100"
+              : "translate-y-[-10%] opacity-0"
+          )}
         >
           <span className="px-4 py-2 border-gray-600 border-1 mr-1 hover:border-gray-300 hover:text-gray-300">
             {EMAIL}
