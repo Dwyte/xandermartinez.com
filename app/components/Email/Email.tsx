@@ -59,7 +59,9 @@ export function Email() {
       <button
         ref={buttonRef}
         onClick={isActive ? hidePreview : showPreview}
-        className={"link hover:text-gray-100"}
+        className={
+          "inline-flex items-center gap-1 cursor-pointer hover:text-gray-100"
+        }
       >
         Email
         <Mail stroke="currentColor" strokeWidth={2} width="1em" />

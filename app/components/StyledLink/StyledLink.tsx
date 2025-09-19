@@ -17,7 +17,10 @@ export function StyledLink({
   return (
     <Link
       {...rest}
-      className={clsx("group/styled-link link hover:text-gray-200", className)}
+      className={clsx(
+        "group/styled-link hover:text-gray-200 inline-flex gap-1 items-center",
+        className
+      )}
     >
       {backwards && (
         <ArrowLeft

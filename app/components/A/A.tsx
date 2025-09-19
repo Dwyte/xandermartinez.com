@@ -5,7 +5,7 @@ export function A({ children, ...rest }: React.ComponentPropsWithoutRef<"a">) {
   return (
     <a
       className={clsx(
-        "group/styled-a link hover:text-gray-200",
+        "group/styled-a link hover:text-gray-200 inline-flex items-center gap-1",
         rest.className
       )}
       target="_blank"
