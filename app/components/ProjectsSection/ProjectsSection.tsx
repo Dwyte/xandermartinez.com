@@ -9,11 +9,11 @@ export function ProjectsSection() {
     <div className="section">
       <NumberedHeader number={2} content="Projects" />
       <List>
-        {SIDE_PROJECTS.map((project) => (
+        {SIDE_PROJECTS.slice(0, 3).map((project) => (
           <ListItem key={project.id}>
             <div className="flex flex-col gap-1">
               <h3 className="text-lg font-semibold">
-                <A href={project.liveUrl}>{project.title}</A>
+                <A href={project.url}>{project.title}</A>
               </h3>
               <p>{project.summary}</p>
             </div>
