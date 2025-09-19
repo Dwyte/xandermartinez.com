@@ -7,7 +7,7 @@ export function List({ children, ...rest }: ListProps) {
     <div
       {...rest}
       className={clsx(
-        "flex flex-col gap-6 text-gray-500 hover:text-gray-700 transition-colors",
+        "group/list flex flex-col gap-6 text-gray-500 hover:text-gray-700 transition-colors",
         rest.className
       )}
     >
