@@ -15,10 +15,6 @@
   .section {
     @apply w-[100%] max-w-xl flex flex-col gap-10;
   }
-
-  .link {
-    @apply cursor-pointer inline-flex items-center gap-1 hover:underline decoration-1 underline-offset-4;
-  }
 }
 
 @theme inline {
