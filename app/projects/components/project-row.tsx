@@ -21,7 +21,7 @@ export function ProjectRow({ project, isSameYearAsPrev }: ProjectRowProps) {
     <div className="group/project flex flex-row gap-16">
       {/* Year. Only displayed on the first project (latest) of that year. */}
       <div
-        className={clsx("py-4 min-w-9", {
+        className={clsx("py-4 min-w-9 group-hover/list-item:text-gray-400", {
           invisible: isSameYearAsPrev,
         })}
       >
@@ -33,10 +33,12 @@ export function ProjectRow({ project, isSameYearAsPrev }: ProjectRowProps) {
         })}
       >
         {/* Project Title and Summary (displayed on hover) */}
-        <div className="flex-1 md:max-w-75 md:min-w-75 relative">{title}</div>
+        <div className="flex-1 md:max-w-75 md:min-w-75 relative text-gray-100 group-hover/list:text-gray-500 group-hover/list-item:text-gray-100">
+          {title}
+        </div>
 
         {/* Techstack */}
-        <div className="hidden md:flex flex-1 py-4">
+        <div className="hidden md:flex flex-1 py-4 group-hover/list-item:text-gray-400">
           <div className="hidden lg:block">{project.techstack?.join(", ")}</div>
           {/* Show the first one only as the screen shrinks. */}
           <div className="hidden md:block lg:hidden">
@@ -45,7 +47,7 @@ export function ProjectRow({ project, isSameYearAsPrev }: ProjectRowProps) {
         </div>
 
         {/* Project Links */}
-        <div className="hidden sm:flex [&>*]:px-[0.5em]">
+        <div className="hidden sm:flex [&>*]:px-[0.5em] group-hover/list-item:text-gray-400">
           {project.sourceUrl && <A href={project.sourceUrl}>Source</A>}
           {project.videoUrl && <A href={project.videoUrl}>Video</A>}
           {project.downloadUrl && <A href={project.downloadUrl}>Video</A>}
