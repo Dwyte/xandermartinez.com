@@ -52,7 +52,6 @@ export const SIDE_PROJECTS: SideProject[] = [
     url: "https://iam-web-client.herokuapp.com/",
     sourceUrl: "https://github.com/Dwyte/iam-web-client",
     date: new Date("2020"),
-    videoUrl: "https://www.youtube.com/watch?v=LfGtKPD1r54",
   },
   {
     id: 3,
@@ -61,6 +60,7 @@ export const SIDE_PROJECTS: SideProject[] = [
     techstack: ["React"],
     videoUrl: "https://www.youtube.com/watch?v=LfGtKPD1r54",
     date: new Date("2019"),
+    sourceUrl: "https://github.com/Dwyte/CoinMarketSignals",
   },
   {
     id: 4,
@@ -69,6 +69,7 @@ export const SIDE_PROJECTS: SideProject[] = [
     techstack: ["MongoDB", "Express", "React", "NodeJS"],
     videoUrl: "https://www.youtube.com/watch?v=VHG8R_ZuV8g",
     date: new Date("2019"),
+    sourceUrl: "https://github.com/Dwyte/cipher-chat",
   },
   {
     id: 5,
@@ -77,6 +78,7 @@ export const SIDE_PROJECTS: SideProject[] = [
     techstack: ["MongoDB", "Express", "React", "NodeJS"],
     videoUrl: "https://www.youtube.com/watch?v=t3onm7GPE3I",
     date: new Date("2019"),
+    sourceUrl: "https://github.com/Dwyte/vault-safe",
   },
   {
     id: 6,
@@ -85,6 +87,7 @@ export const SIDE_PROJECTS: SideProject[] = [
     techstack: ["MongoDB", "AngularJS", "Express", "NodeJS"],
     videoUrl: "https://www.youtube.com/watch?v=RC3OwBsIJsg",
     date: new Date("2018"),
+    sourceUrl: "https://github.com/Dwyte/vdvs-backend",
   },
   {
     id: 7,
@@ -94,6 +97,8 @@ export const SIDE_PROJECTS: SideProject[] = [
     url: "https://play.google.com/store/apps/details?id=com.colorrush.colorswitch",
     videoUrl: "https://www.youtube.com/watch?v=a9KyidiTWlU",
     date: new Date("2017"),
+    apkUrl:
+      "https://drive.google.com/file/d/1RryMZMaMCHio5fKmxpf7aMAO6vWPuYxh/view?usp=sharing",
   },
   {
     id: 8,
@@ -103,6 +108,8 @@ export const SIDE_PROJECTS: SideProject[] = [
     url: "https://play.google.com/store/apps/details?id=com.morpheus.minerrush",
     videoUrl: "https://www.youtube.com/watch?v=QKmsONzXXaM",
     date: new Date("2018"),
+    apkUrl:
+      "https://drive.google.com/file/d/19uSuiE6w7VgICM76HbPItznCSyzbjCAC/view?usp=sharing",
   },
   {
     id: 9,
@@ -111,6 +118,8 @@ export const SIDE_PROJECTS: SideProject[] = [
     techstack: ["Unity3D", "C#"],
     url: "https://play.google.com/store/apps/details?id=com.Blockchain.Bitcoin",
     date: new Date("2018"),
+    apkUrl:
+      "https://drive.google.com/file/d/1k5PAJsNZ4oVDVudkzEovz8PyphWY7UZD/view?usp=sharing",
   },
   {
     id: 10,
@@ -119,6 +128,7 @@ export const SIDE_PROJECTS: SideProject[] = [
     techstack: ["Python", "Discord.py"],
     videoUrl: "https://www.youtube.com/watch?v=CigorCz_3S0",
     date: new Date("2019"),
+    sourceUrl: "https://github.com/Dwyte/bitcoin-ticker",
   },
   {
     id: 11,
@@ -127,6 +137,7 @@ export const SIDE_PROJECTS: SideProject[] = [
     techstack: ["Python", "Discord.py"],
     videoUrl: "https://www.youtube.com/watch?v=P6hu8tYKYd0",
     date: new Date("2019"),
+    sourceUrl: "https://github.com/Dwyte/mex-bot",
   },
   {
     id: 12,
@@ -135,5 +146,6 @@ export const SIDE_PROJECTS: SideProject[] = [
     techstack: ["Python", "Discord.py"],
     videoUrl: "https://www.youtube.com/watch?v=aRsmAD_buSw",
     date: new Date("2019"),
+    sourceUrl: "https://github.com/Dwyte/moon-bot",
   },
 ];

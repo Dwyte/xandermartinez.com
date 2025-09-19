@@ -67,6 +67,7 @@ export function ProjectRow({
           {project.sourceUrl && <A href={project.sourceUrl}>Source</A>}
           {project.videoUrl && <A href={project.videoUrl}>Video</A>}
           {project.downloadUrl && <A href={project.downloadUrl}>Video</A>}
+          {project.apkUrl && <A href={project.apkUrl}>APK</A>}
         </div>
       </div>
     </div>

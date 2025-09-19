@@ -20,4 +20,5 @@ type SideProject = {
   videoUrl?: string;
   downloadUrl?: string;
   techstack?: string[];
+  apkUrl?: string;
 };
