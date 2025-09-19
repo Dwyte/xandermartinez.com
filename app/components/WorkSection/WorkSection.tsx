@@ -25,7 +25,9 @@ export function WorkItem({ work }: { work: WorkExperience }) {
   return (
     <div className="group/work-item flex flex-col gap-1">
       <div className="flex items-center justify-between gap-2 flex-row">
-        <h3 className="text-lg font-semibold">{header}</h3>
+        <h3 className="text-lg font-semibold text-gray-400 group-hover/list:text-gray-600 group-hover/list-item:text-gray-100">
+          {header}
+        </h3>
         <p className="mt-1 opacity-0 text-xs group-hover/work-item:opacity-100 transition-opacity">
           {fromDateStr} – {toDateStr}
         </p>
@@ -46,9 +48,6 @@ export function WorkSection() {
             <WorkItem work={work} />
           </ListItem>
         ))}
-        <StyledLink className="text-sm" href="/work">
-          View Full Timeline
-        </StyledLink>
       </List>
     </div>
   );
