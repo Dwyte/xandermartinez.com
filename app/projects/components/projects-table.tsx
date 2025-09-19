@@ -1,22 +1,26 @@
+"use client";
+
 import clsx from "clsx";
 
 import { ListItem, List } from "@/app/components/List";
 import { SIDE_PROJECTS } from "@/app/constants";
 import { ProjectRow } from "./project-row";
+import { useState } from "react";
+import { ProjectTableHeader } from "./project-table-header";
 
 export function ProjectsTable() {
+  const [isShowSummary, setIsShowSummary] = useState(false);
+
   const sorted = SIDE_PROJECTS.sort(
     (a, b) => b.date.getTime() - a.date.getTime()
   );
 
   return (
     <div>
-      <div className="flex gap-2 pb-2 pr-2 font-semibold text-gray-700">
-        <div className="min-w-9 mr-14">Year</div>
-        <div className="flex-1 md:max-w-75 md:min-w-75">Project</div>
-        <div className="flex-1 hidden md:block">Built with</div>
-        <div className="hidden sm:block">Links</div>
-      </div>
+      <ProjectTableHeader
+        isShowSummary={isShowSummary}
+        toggleThirdColumn={() => setIsShowSummary((prev) => !prev)}
+      />
       <List className="gap-0!">
         {sorted.map((project, index) => {
           const isSameYearAsPrev =
@@ -33,6 +37,7 @@ export function ProjectsTable() {
               <ProjectRow
                 project={project}
                 isSameYearAsPrev={isSameYearAsPrev}
+                isShowSummary={isShowSummary}
               />
             </ListItem>
           );

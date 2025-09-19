@@ -2,9 +2,17 @@ import clsx from "clsx";
 
 import { A } from "@/app/components/A";
 
-type ProjectRowProps = { project: SideProject; isSameYearAsPrev: boolean };
+type ProjectRowProps = {
+  project: SideProject;
+  isSameYearAsPrev: boolean;
+  isShowSummary: boolean;
+};
 
-export function ProjectRow({ project, isSameYearAsPrev }: ProjectRowProps) {
+export function ProjectRow({
+  project,
+  isSameYearAsPrev,
+  isShowSummary,
+}: ProjectRowProps) {
   const title = project.url ? (
     <A href={project.url} className="py-4 px-4 ml-[-1em]">
       {project.title}
@@ -39,11 +47,19 @@ export function ProjectRow({ project, isSameYearAsPrev }: ProjectRowProps) {
 
         {/* Techstack */}
         <div className="hidden md:flex flex-1 py-4 group-hover/list-item:text-gray-400">
-          <div className="hidden lg:block">{project.techstack?.join(", ")}</div>
-          {/* Show the first one only as the screen shrinks. */}
-          <div className="hidden md:block lg:hidden">
-            {project.techstack?.[0]}
-          </div>
+          {isShowSummary && project.summary}
+
+          {!isShowSummary && (
+            <>
+              <div className="hidden lg:block">
+                {project.techstack?.join(", ")}
+              </div>
+              {/* Show the first one only as the screen shrinks. */}
+              <div className="hidden md:block lg:hidden">
+                {project.techstack?.[0]}
+              </div>
+            </>
+          )}
         </div>
 
         {/* Project Links */}
