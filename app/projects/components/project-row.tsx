@@ -21,7 +21,7 @@ export function ProjectRow({ project, isSameYearAsPrev }: ProjectRowProps) {
     <div className="group/project flex flex-row gap-16">
       {/* Year. Only displayed on the first project (latest) of that year. */}
       <div
-        className={clsx("py-4 group-hover/project:pb-8]", {
+        className={clsx("py-4 min-w-9", {
           invisible: isSameYearAsPrev,
         })}
       >
@@ -36,7 +36,7 @@ export function ProjectRow({ project, isSameYearAsPrev }: ProjectRowProps) {
         <div className="flex-1 md:max-w-75 md:min-w-75 relative">{title}</div>
 
         {/* Techstack */}
-        <div className="hidden md:flex flex-1 items-center">
+        <div className="hidden md:flex flex-1 py-4">
           <div className="hidden lg:block">{project.techstack?.join(", ")}</div>
           {/* Show the first one only as the screen shrinks. */}
           <div className="hidden md:block lg:hidden">
