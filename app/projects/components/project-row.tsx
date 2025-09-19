@@ -6,9 +6,11 @@ type ProjectRowProps = { project: SideProject; isSameYearAsPrev: boolean };
 
 export function ProjectRow({ project, isSameYearAsPrev }: ProjectRowProps) {
   const title = project.url ? (
-    <A href={project.url}>{project.title}</A>
+    <A href={project.url} className="py-4 px-4 ml-[-1em]">
+      {project.title}
+    </A>
   ) : (
-    project.title
+    <div className="py-4">{project.title}</div>
   );
 
   const year = project.date.toLocaleDateString("en-US", {
@@ -19,30 +21,22 @@ export function ProjectRow({ project, isSameYearAsPrev }: ProjectRowProps) {
     <div className="group/project flex flex-row gap-16">
       {/* Year. Only displayed on the first project (latest) of that year. */}
       <div
-        className={clsx("py-4 group-hover/project:pb-8] transition-[padding]", {
+        className={clsx("py-4 group-hover/project:pb-8]", {
           invisible: isSameYearAsPrev,
         })}
       >
         {year}
       </div>
       <div
-        className={clsx(
-          "flex flex-row flex-1 py-4 group-hover/project:pb-8 transition-[padding]",
-          {
-            "border-t-[1px] border-t-gray-800/50": isSameYearAsPrev,
-          }
-        )}
+        className={clsx("flex flex-row flex-1 gap-2", {
+          "border-t-[1px] border-t-gray-800/50": isSameYearAsPrev,
+        })}
       >
         {/* Project Title and Summary (displayed on hover) */}
-        <div className="flex-1 md:max-w-75 md:min-w-75">
-          <div>{title}</div>
-          <p className="hidden group-hover/project:block absolute text-xs">
-            {project.summary}
-          </p>
-        </div>
+        <div className="flex-1 md:max-w-75 md:min-w-75 relative">{title}</div>
 
         {/* Techstack */}
-        <div className="hidden  md:block flex-1">
+        <div className="hidden md:flex flex-1 items-center">
           <div className="hidden lg:block">{project.techstack?.join(", ")}</div>
           {/* Show the first one only as the screen shrinks. */}
           <div className="hidden md:block lg:hidden">
@@ -51,7 +45,7 @@ export function ProjectRow({ project, isSameYearAsPrev }: ProjectRowProps) {
         </div>
 
         {/* Project Links */}
-        <div className="hidden  sm:flex gap-2">
+        <div className="hidden sm:flex [&>*]:px-[0.5em]">
           {project.sourceUrl && <A href={project.sourceUrl}>Source</A>}
           {project.videoUrl && <A href={project.videoUrl}>Video</A>}
           {project.downloadUrl && <A href={project.downloadUrl}>Video</A>}
