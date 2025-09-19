@@ -13,8 +13,11 @@ type WorkExperience = {
 type SideProject = {
   id: number;
   title: string;
-  liveUrl?: string;
-  sourceUrl?: string;
   summary: string;
+  date: Date;
+  url?: string;
+  sourceUrl?: string;
+  videoUrl?: string;
+  downloadUrl?: string;
   techstack?: string[];
 };
