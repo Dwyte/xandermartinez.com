@@ -1,4 +1,4 @@
-export const TITLE = "Xander Martinez";
+export const TITLE = "Xander Dwight";
 export const EMAIL = "martindwyte@gmail.com";
 export const GITHUB_URL = "https://www.github.com";
 export const LINKEDIN_URL = "https://www.linkedin.com";
@@ -12,7 +12,7 @@ export const WORK_EXPRIENCES: WorkExperience[] = [
     url: "https://shopee.ph/the_fabshoppe",
     location: "Remote",
     position: "Owner, Web Developer",
-    summary: "Streamlined Business Operations through personalized WebApps",
+    summary: "Optimized business operations through custom web-based tools",
   },
   {
     id: 1,
@@ -21,7 +21,8 @@ export const WORK_EXPRIENCES: WorkExperience[] = [
     company: "Freelance",
     location: "Remote",
     position: "Full Stack Web Developer",
-    summary: "Optimized Business Operations through personalized WebApps",
+    summary:
+      "Streamlined client’s forex trading workflow with a custom all-in-one terminal",
   },
 ];
 
