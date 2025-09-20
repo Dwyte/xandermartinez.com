@@ -21,6 +21,7 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
+  --font-serif: var(--font-unna-serif);
   --font-mono: var(--font-geist-mono);
 }
 

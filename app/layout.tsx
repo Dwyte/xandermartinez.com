@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Unna } from "next/font/google";
 import "./globals.css";
 
 import { TITLE } from "./constants";
@@ -11,6 +11,12 @@ const geistSans = Geist({
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+const unna = Unna({
+  weight: "400",
+  variable: "--font-unna-serif",
   subsets: ["latin"],
 });
 
@@ -27,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased relative`}
+        className={`${geistSans.variable} ${geistMono.variable} ${unna.variable} antialiased relative`}
       >
         {children}
         <div className="noise absolute w-full h-full top-0 opacity-10 saturate-200 pointer-events-none"></div>
