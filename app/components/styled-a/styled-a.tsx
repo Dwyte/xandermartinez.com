@@ -9,13 +9,12 @@ export function StyledA({
     <a
       {...rest}
       className={clsx(
-        "group/styled-a link hover:text-gray-200 inline-flex items-center gap-1",
+        "group/styled-a link hover:text-gray-200 inline-flex items-center",
         rest.className
       )}
       target="_blank"
     >
-      <span>{children} </span>
-
+      {children}
       <ArrowUpRight
         stroke="currentColor"
         strokeWidth={2}
