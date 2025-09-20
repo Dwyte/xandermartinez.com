@@ -1,7 +1,7 @@
-export const TITLE = "Xander Dwight";
+export const TITLE = "Xander Martinez";
 export const EMAIL = "martindwyte@gmail.com";
-export const GITHUB_URL = "https://www.github.com";
-export const LINKEDIN_URL = "https://www.linkedin.com";
+export const GITHUB_URL = "https://github.com/Dwyte";
+export const LINKEDIN_URL = "https://www.linkedin.com/in/xanderdwightmartinez/";
 
 export const WORK_EXPRIENCES: WorkExperience[] = [
   {
