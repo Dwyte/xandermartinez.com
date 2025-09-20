@@ -30,7 +30,6 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased relative`}
       >
         {children}
-
         <div className="noise absolute w-full h-full top-0 opacity-10 saturate-200 pointer-events-none"></div>
       </body>
     </html>
