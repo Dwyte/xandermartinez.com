@@ -1,6 +1,6 @@
-import clsx from "clsx";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import Link, { LinkProps } from "next/link";
+import clsx from "clsx";
 
 type StyledLinkProps = LinkProps & {
   children?: React.ReactNode;

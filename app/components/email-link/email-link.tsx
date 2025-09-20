@@ -12,7 +12,7 @@ function isMouseEventWithinRect(ev: MouseEvent, rect: DOMRect) {
   return evWithinRectX && evWithinRectY;
 }
 
-export function Email() {
+export function EmailLink() {
   const buttonRef = useRef<HTMLButtonElement | null>(null);
   const previewRef = useRef<HTMLElement | null>(null);
 

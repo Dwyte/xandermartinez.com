@@ -1,10 +1,9 @@
 import { WORK_EXPRIENCES } from "@/app/constants";
-import { NumberedHeader } from "../NumberedHeader";
-import { List, ListItem } from "../List";
-import { A } from "../A";
-import { StyledLink } from "../StyledLink";
+import { NumberedHeader } from "../numbered-header";
+import { StyledList, StyledListItem } from "../styled-list";
+import { StyledA } from "../styled-a";
 
-export function WorkItem({ work }: { work: WorkExperience }) {
+function WorkItem({ work }: { work: WorkExperience }) {
   const fromDateStr = work.fromDate.toLocaleDateString("en-US", {
     year: "numeric",
   });
@@ -17,7 +16,7 @@ export function WorkItem({ work }: { work: WorkExperience }) {
         });
 
   const header = work.url ? (
-    <A href={work.url}>{work.company}</A>
+    <StyledA href={work.url}>{work.company}</StyledA>
   ) : (
     work.company
   );
@@ -42,13 +41,13 @@ export function WorkSection() {
   return (
     <div className="section">
       <NumberedHeader number={1} content="Work" />
-      <List>
+      <StyledList>
         {WORK_EXPRIENCES.map((work) => (
-          <ListItem key={work.id}>
+          <StyledListItem key={work.id}>
             <WorkItem work={work} />
-          </ListItem>
+          </StyledListItem>
         ))}
-      </List>
+      </StyledList>
     </div>
   );
 }

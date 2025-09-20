@@ -1,6 +1,6 @@
-import { A } from "../A";
+import { StyledA } from "../styled-a";
 import { HoverReveal } from "../hover-reveal";
-import { NumberedHeader } from "../NumberedHeader";
+import { NumberedHeader } from "../numbered-header";
 
 export function NowSection() {
   return (
@@ -28,12 +28,12 @@ export function NowSection() {
           <strong>
             Showing up daily: refining my fundamentals and exploring new
             technologies. Focused on what matters,{" "}
-            <A
+            <StyledA
               href="https://jamesclear.com/continuous-improvemena"
               className="inline"
             >
               improving 1% each day
-            </A>
+            </StyledA>
           </strong>
           ,{" "}
           <HoverReveal>

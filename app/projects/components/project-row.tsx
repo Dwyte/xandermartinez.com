@@ -1,6 +1,6 @@
 import clsx from "clsx";
 
-import { A } from "@/app/components/A";
+import { StyledA } from "@/app/components/styled-a";
 
 type ProjectRowProps = {
   project: SideProject;
@@ -14,9 +14,9 @@ export function ProjectRow({
   isShowSummary,
 }: ProjectRowProps) {
   const title = project.url ? (
-    <A href={project.url} className="py-4 px-4 ml-[-1em]">
+    <StyledA href={project.url} className="py-4 px-4 ml-[-1em]">
       {project.title}
-    </A>
+    </StyledA>
   ) : (
     <div className="py-4">{project.title}</div>
   );
@@ -64,10 +64,11 @@ export function ProjectRow({
 
         {/* Project Links */}
         <div className="hidden sm:flex [&>*]:px-[0.5em] group-hover/list-item:text-gray-400">
-          {project.sourceUrl && <A href={project.sourceUrl}>Source</A>}
-          {project.videoUrl && <A href={project.videoUrl}>Video</A>}
-          {project.downloadUrl && <A href={project.downloadUrl}>Video</A>}
-          {project.apkUrl && <A href={project.apkUrl}>APK</A>}
+          {project.videoUrl && <StyledA href={project.videoUrl}>Video</StyledA>}
+          {project.apkUrl && <StyledA href={project.apkUrl}>APK</StyledA>}
+          {project.sourceUrl && (
+            <StyledA href={project.sourceUrl}>Source</StyledA>
+          )}{" "}
         </div>
       </div>
     </div>

@@ -2,7 +2,7 @@ import clsx from "clsx";
 
 type ListProps = React.ComponentProps<"div">;
 
-export function List({ children, ...rest }: ListProps) {
+export function StyledList({ children, ...rest }: ListProps) {
   return (
     <div
       {...rest}

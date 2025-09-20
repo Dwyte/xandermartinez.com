@@ -1,7 +1,10 @@
 import clsx from "clsx";
 import { ArrowUpRight } from "lucide-react";
 
-export function A({ children, ...rest }: React.ComponentPropsWithoutRef<"a">) {
+export function StyledA({
+  children,
+  ...rest
+}: React.ComponentPropsWithoutRef<"a">) {
   return (
     <a
       {...rest}

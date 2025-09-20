@@ -1,1 +1,0 @@
-export { NumberedHeader } from "./NumberedHeader";

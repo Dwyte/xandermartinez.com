@@ -2,7 +2,7 @@
 
 import clsx from "clsx";
 
-import { ListItem, List } from "@/app/components/List";
+import { StyledList, StyledListItem } from "@/app/components/styled-list";
 import { SIDE_PROJECTS } from "@/app/constants";
 import { ProjectRow } from "./project-row";
 import { useState } from "react";
@@ -21,14 +21,14 @@ export function ProjectsTable() {
         isShowSummary={isShowSummary}
         toggleThirdColumn={() => setIsShowSummary((prev) => !prev)}
       />
-      <List className="gap-0!">
+      <StyledList className="gap-0!">
         {sorted.map((project, index) => {
           const isSameYearAsPrev =
             sorted[index - 1]?.date.getUTCFullYear() ===
             project.date.getUTCFullYear();
 
           return (
-            <ListItem
+            <StyledListItem
               className={clsx({
                 "border-t-[1px] border-t-gray-800/50": !isSameYearAsPrev,
               })}
@@ -39,10 +39,10 @@ export function ProjectsTable() {
                 isSameYearAsPrev={isSameYearAsPrev}
                 isShowSummary={isShowSummary}
               />
-            </ListItem>
+            </StyledListItem>
           );
         })}
-      </List>
+      </StyledList>
     </div>
   );
 }

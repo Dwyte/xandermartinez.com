@@ -2,7 +2,7 @@ import clsx from "clsx";
 
 type ListItemProps = React.ComponentPropsWithoutRef<"div">;
 
-export function ListItem({ children, ...rest }: ListItemProps) {
+export function StyledListItem({ children, ...rest }: ListItemProps) {
   return (
     <div
       {...rest}

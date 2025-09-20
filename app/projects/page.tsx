@@ -1,5 +1,5 @@
-import { NumberedHeader } from "../components/NumberedHeader";
-import { StyledLink } from "../components/StyledLink";
+import { NumberedHeader } from "../components/numbered-header";
+import { StyledLink } from "../components/styled-link";
 import { ProjectsTable } from "./components/projects-table";
 
 export default function Project() {
