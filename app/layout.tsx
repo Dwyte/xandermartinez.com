@@ -31,7 +31,7 @@ export default function RootLayout({
       >
         {children}
 
-        <div className="noise absolute w-full h-full top-0 opacity-20 saturate-200 pointer-events-none"></div>
+        <div className="noise absolute w-full h-full top-0 opacity-10 saturate-200 pointer-events-none"></div>
       </body>
     </html>
   );
