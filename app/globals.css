@@ -9,6 +9,10 @@
   *::selection {
     @apply bg-gray-100 text-gray-800;
   }
+
+  *:focus-visible {
+    @apply outline-2 outline-blue-500 rounded-none;
+  }
 }
 
 @layer components {
