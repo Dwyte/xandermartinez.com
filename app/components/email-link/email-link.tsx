@@ -60,7 +60,7 @@ export function EmailLink() {
         ref={buttonRef}
         onClick={isActive ? hidePreview : showPreview}
         className={
-          "inline-flex items-center gap-1 cursor-pointer hover:text-gray-100"
+          "inline-flex items-center gap-1 cursor-pointer focus-visible:text-gray-100 hover:text-gray-100 focus-visible:underline hover:underline underline-1 underline-offset-2"
         }
       >
         Email
