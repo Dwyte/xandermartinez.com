@@ -18,7 +18,7 @@ export function StyledLink({
     <Link
       {...rest}
       className={clsx(
-        "group/styled-link hover:text-gray-200 inline-flex gap-1 items-center",
+        "group/styled-link focus-visible:underline hover:underline underline-offset-2 focus-visible:text-gray-200 hover:text-gray-200 inline-flex gap-1 items-center",
         className
       )}
     >

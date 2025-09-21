@@ -9,7 +9,7 @@ export function StyledA({
     <a
       {...rest}
       className={clsx(
-        "group/styled-a link hover:text-gray-200 inline-flex items-center",
+        "group/styled-a focus-visible:underline hover:underline underline-offset-2 focus-visible:text-gray-200 hover:text-gray-200 inline-flex items-center",
         rest.className
       )}
       target="_blank"
