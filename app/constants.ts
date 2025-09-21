@@ -3,6 +3,12 @@ export const EMAIL = "martindwyte@gmail.com";
 export const GITHUB_URL = "https://github.com/Dwyte";
 export const LINKEDIN_URL = "https://www.linkedin.com/in/xanderdwightmartinez/";
 
+export const QUOTES = [
+  "Let your mind wander.",
+  "Take risks.",
+  "Trust the process of becoming.",
+];
+
 export const WORK_EXPRIENCES: WorkExperience[] = [
   {
     id: 0,
