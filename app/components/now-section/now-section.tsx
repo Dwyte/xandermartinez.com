@@ -30,7 +30,7 @@ export function NowSection() {
               world.
             </HoverReveal>{" "}
             <strong>
-              Showing up daily: refining my fundamentals and exploring new
+              Showing up daily, refining my fundamentals and exploring new
               technologies. Focused on what matters,{" "}
               <StyledA
                 href="https://jamesclear.com/continuous-improvemena"
