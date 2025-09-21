@@ -9,8 +9,8 @@ export function HeroSection() {
         {TITLE}
       </h1>
       <p className="text-2xl">
-        Developing thoughtful web experiences — with precision, maintainability,
-        and performance.
+        Developing thoughtful web experiences with precision, accessibility and
+        maintainability.
       </p>
       <p className="text-lg text-gray-500">
         Get in touch via <EmailLink /> or{" "}
