@@ -8,7 +8,7 @@ export function ProjectsSection() {
   return (
     <div className="section">
       <NumberedHeader number={2} content="Projects" />
-      <StyledList>
+      <StyledList className="items-start">
         {SIDE_PROJECTS.slice(0, 3).map((project) => (
           <StyledListItem key={project.id}>
             <div className="flex flex-col gap-1">

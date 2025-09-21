@@ -41,7 +41,7 @@ export function WorkSection() {
   return (
     <div className="section">
       <NumberedHeader number={1} content="Work" />
-      <StyledList>
+      <StyledList className="items-start">
         {WORK_EXPRIENCES.map((work) => (
           <StyledListItem key={work.id}>
             <WorkItem work={work} />
