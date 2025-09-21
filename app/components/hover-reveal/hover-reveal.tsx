@@ -14,6 +14,9 @@ export function HoverReveal({
 
   return (
     <span
+      tabIndex={0}
+      onFocus={() => setIsActive(true)}
+      onBlur={() => setIsActive(false)}
       onMouseEnter={() => setIsActive(true)}
       onMouseLeave={() => setIsActive(false)}
       className={clsx(
