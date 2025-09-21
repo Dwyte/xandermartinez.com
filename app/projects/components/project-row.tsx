@@ -50,15 +50,9 @@ export function ProjectRow({
           {isShowSummary && project.summary}
 
           {!isShowSummary && (
-            <>
-              <div className="hidden lg:block">
-                {project.techstack?.join(", ")}
-              </div>
-              {/* Show the first one only as the screen shrinks. */}
-              <div className="hidden md:block lg:hidden">
-                {project.techstack?.[0]}
-              </div>
-            </>
+            <div className="hidden md:block">
+              {project.techstack?.join(", ")}
+            </div>
           )}
         </div>
 
