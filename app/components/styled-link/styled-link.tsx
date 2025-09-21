@@ -27,7 +27,7 @@ export function StyledLink({
           stroke="currentColor"
           strokeWidth={2}
           width="1em"
-          className="group-hover/styled-link:translate-x-[-30%] transition-transform"
+          className="group-hover/styled-link:translate-x-[-30%] group-focus-within/styled-link:translate-x-[-30%] transition-transform"
         />
       )}
 
@@ -38,7 +38,7 @@ export function StyledLink({
           stroke="currentColor"
           strokeWidth={2}
           width="1em"
-          className="group-hover/styled-link:translate-x-[30%] transition-transform"
+          className="group-hover/styled-link:translate-x-[30%] group-focus-within/styled-link:translate-x-[30%] transition-transform"
         />
       )}
     </Link>

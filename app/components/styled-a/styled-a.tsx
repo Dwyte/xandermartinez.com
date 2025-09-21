@@ -19,7 +19,7 @@ export function StyledA({
         stroke="currentColor"
         strokeWidth={2}
         width="1em"
-        className="group-hover/styled-a:translate-x-[20%] group-hover/styled-a:translate-y-[-20%] transition-transform"
+        className="group-hover/styled-a:translate-x-[20%] group-hover/styled-a:translate-y-[-20%] group-focus-visible/styled-a:translate-y-[-20%] group-focus-visible/styled-a:translate-x-[20%] transition-transform"
       />
     </a>
   );
