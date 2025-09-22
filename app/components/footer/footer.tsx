@@ -1,3 +1,5 @@
+"use client";
+
 import { QUOTES, TITLE } from "@/app/constants";
 
 export function Footer() {
