@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
-import { Mail, SendHorizonal } from "lucide-react";
+import { CheckCheck, ClipboardCopy, Mail, SendHorizonal } from "lucide-react";
 import clsx from "clsx";
 
 import { EMAIL } from "@/app/constants";
@@ -14,12 +14,30 @@ function isMouseEventWithinRect(ev: MouseEvent, rect: DOMRect) {
 
 export function EmailLink() {
   const buttonRef = useRef<HTMLButtonElement | null>(null);
-  const previewRef = useRef<HTMLElement | null>(null);
+  const previewRef = useRef<HTMLDivElement | null>(null);
 
   const [isActive, setIsActive] = useState(false);
   const [isPreviewMounted, setIsPreviewMounted] = useState(false);
 
+  const [isCopied, setIsCopied] = useState(false);
+
   const previewTimeout = useRef<number>(0);
+  const copyTimeout = useRef<number>(0);
+
+  async function handleCopyEmail(
+    event: React.MouseEvent<HTMLButtonElement, MouseEvent>
+  ) {
+    try {
+      setIsCopied(false);
+      await navigator.clipboard.writeText(EMAIL);
+      setIsCopied(true);
+
+      clearTimeout(copyTimeout.current);
+      copyTimeout.current = window.setTimeout(() => setIsCopied(false), 2000);
+    } catch {
+      console.error("Failed to copy email.");
+    }
+  }
 
   function hidePreview() {
     setIsActive(false);
@@ -77,11 +95,30 @@ export function EmailLink() {
               : "translate-y-[-10%] opacity-0"
           )}
         >
-          <span className="px-4 py-2 border-gray-600 border-1 mr-1 hover:border-gray-300 hover:text-gray-300">
+          <button
+            onClick={handleCopyEmail}
+            className="px-4 py-2 border-gray-600 border-1 mr-1 hover:border-gray-300 hover:text-gray-300 flex items-center gap-2 cursor-pointer"
+          >
+            {isCopied ? (
+              <CheckCheck
+                stroke="currentColor"
+                strokeWidth={2}
+                width="1em"
+                className="fade-in"
+              />
+            ) : (
+              <ClipboardCopy
+                stroke="currentColor"
+                strokeWidth={2}
+                width="1em"
+                className="fade-in"
+              />
+            )}
             {EMAIL}
-          </span>
+          </button>
           <a
             href={`mailto:${EMAIL}`}
+            target="_blank"
             className="flex items-center px-3 py-2 border-1 border-gray-600 bg-gradient-to-r from-gray-950 to-gray-800 cursor-pointer hover:border-gray-300 hover:text-gray-200"
           >
             <SendHorizonal stroke="currentColor" width="1em" strokeWidth={2} />
