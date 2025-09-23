@@ -15,7 +15,9 @@ export function HeroSection() {
       <p className="text-lg text-gray-500">
         Get in touch via <EmailLink /> or{" "}
         <StyledA href={LINKEDIN_URL}>LinkedIn</StyledA>, see my code on{" "}
-        <StyledA href={GITHUB_URL}>Github</StyledA>.
+        <span className="whitespace-nowrap">
+          <StyledA href={GITHUB_URL}>Github</StyledA>.
+        </span>
       </p>
     </div>
   );
