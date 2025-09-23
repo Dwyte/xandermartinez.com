@@ -73,3 +73,14 @@ body {
     opacity: 0;
   }
 }
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 200ms forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
