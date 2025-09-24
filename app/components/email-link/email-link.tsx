@@ -22,7 +22,10 @@ export function EmailLink() {
       </PopoverTrigger>
 
       <PopoverPortal>
-        <PopoverContent sideOffset={4} className="popover-content">
+        <PopoverContent
+          sideOffset={4}
+          className="popover-content drop-shadow-md drop-shadow-black"
+        >
           <EmailPreview />
         </PopoverContent>
       </PopoverPortal>
