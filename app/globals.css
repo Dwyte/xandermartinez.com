@@ -84,3 +84,20 @@ body {
     opacity: 1;
   }
 }
+
+.popover-content {
+  transform-origin: var(--radix-popover-content-transform-origin);
+  animation: slideDown 200ms ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

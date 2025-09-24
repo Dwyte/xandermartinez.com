@@ -22,7 +22,7 @@ export function EmailLink() {
       </PopoverTrigger>
 
       <PopoverPortal>
-        <PopoverContent>
+        <PopoverContent sideOffset={4} className="popover-content">
           <EmailPreview />
         </PopoverContent>
       </PopoverPortal>
