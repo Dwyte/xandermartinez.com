@@ -24,7 +24,7 @@ function WorkItem({ work }: { work: WorkExperience }) {
   return (
     <div className="group/work-item flex flex-col gap-1">
       <div className="flex items-center justify-between gap-2 flex-row">
-        <h3 className="text-xl font-serif font-semibold text-gray-400 group-hover/list:text-gray-600 group-hover/list-item:text-gray-100">
+        <h3 className="text-xl font-serif font-semibold text-neutral-400 group-hover/list:text-neutral-600 group-hover/list-item:text-neutral-100">
           {header}
         </h3>
         <p className="mt-1 opacity-0 text-xs group-hover/work-item:opacity-100 transition-opacity">

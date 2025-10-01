@@ -11,7 +11,7 @@ export function StyledRadixTooltipContent({
   return (
     <TooltipContent
       {...rest}
-      className="bg-gray-950 text-gray-300 py-1 px-3 rounded-sm font-serif drop-shadow-black drop-shadow-md border-1 border-gray-600 popover-content"
+      className="bg-gray-950 text-neutral-300 py-1 px-3 rounded-sm font-serif drop-shadow-black drop-shadow-md border-1 border-gray-600 popover-content"
     >
       <TooltipArrow
         width={10}

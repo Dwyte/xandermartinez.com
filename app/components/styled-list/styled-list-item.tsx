@@ -6,7 +6,7 @@ export function StyledListItem({ children, ...rest }: ListItemProps) {
   return (
     <div
       {...rest}
-      className={clsx("group/list-item hover:text-gray-100", rest.className)}
+      className={clsx("group/list-item hover:text-neutral-100", rest.className)}
     >
       {children}
     </div>

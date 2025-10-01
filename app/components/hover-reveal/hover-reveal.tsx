@@ -21,7 +21,7 @@ export function HoverReveal({
       onMouseLeave={() => setIsActive(false)}
       className={clsx(
         "transition-all ease-in",
-        isActive ? "blur-none" : "blur-xs text-gray-500",
+        isActive ? "blur-none" : "blur-xs text-neutral-500",
         className
       )}
       {...rest}

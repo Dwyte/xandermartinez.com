@@ -4,17 +4,17 @@ import { NumberedHeader } from "../numbered-header";
 
 export function NowSection() {
   return (
-    <section className="section leading-relaxed text-gray-600 [&_strong]:font-normal [&_strong]:text-gray-100">
+    <section className="section leading-relaxed text-neutral-600 [&_strong]:font-normal [&_strong]:text-neutral-100">
       <NumberedHeader number={3} content="Now" />
       <div>
-        <p className="font-serif text-sm text-gray-700 brightness-200 font-semibold">
+        <p className="font-serif text-sm text-secondary-1 brightness-75 font-bold">
           As of July 15, 2025
         </p>
         <div className="[&>p]:mb-4">
           <p>
             Running my own business taught me valuable lessons, but it also
             reminded me where I do my best work—
-            <span className="text-gray-400">
+            <span className="text-neutral-400">
               &nbsp;creating solutions through software.
             </span>
           </p>

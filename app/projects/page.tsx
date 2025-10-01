@@ -7,7 +7,7 @@ export default function Project() {
     <div className="flex flex-col items-center pt-32 px-8 pb-16 lg:px-16">
       <div className="fade-out-overlay"></div>
       <div className="w-full max-w-7xl flex flex-col items-stretch gap-16 lg:flex-row lg:items-start lg:gap-32 justify-center">
-        <StyledLink className="text-gray-500 text-lg" href="/" backwards>
+        <StyledLink className="text-neutral-500 text-lg" href="/" backwards>
           Back
         </StyledLink>
 

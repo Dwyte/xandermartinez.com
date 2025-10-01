@@ -29,7 +29,7 @@ export function ProjectRow({
     <div className="group/project flex flex-row gap-16">
       {/* Year. Only displayed on the first project (latest) of that year. */}
       <div
-        className={clsx("py-4 min-w-9 group-hover/list-item:text-gray-400", {
+        className={clsx("py-4 min-w-9 group-hover/list-item:text-neutral-400", {
           invisible: isSameYearAsPrev,
         })}
       >
@@ -41,12 +41,12 @@ export function ProjectRow({
         })}
       >
         {/* Project Title and Summary (displayed on hover) */}
-        <div className="flex-1 md:max-w-75 md:min-w-75 relative text-gray-100 group-hover/list:text-gray-500 group-hover/list-item:text-gray-100">
+        <div className="flex-1 md:max-w-75 md:min-w-75 relative text-neutral-100 group-hover/list:text-neutral-500 group-hover/list-item:text-neutral-100">
           {title}
         </div>
 
         {/* Techstack */}
-        <div className="hidden md:flex flex-1 py-4 group-hover/list-item:text-gray-400">
+        <div className="hidden md:flex flex-1 py-4 group-hover/list-item:text-neutral-400">
           {isShowSummary && project.summary}
 
           {!isShowSummary && (
@@ -57,7 +57,7 @@ export function ProjectRow({
         </div>
 
         {/* Project Links */}
-        <div className="hidden sm:flex [&>*]:px-[0.5em] group-hover/list-item:text-gray-400">
+        <div className="hidden sm:flex [&>*]:px-[0.5em] group-hover/list-item:text-neutral-400">
           {project.videoUrl && <StyledA href={project.videoUrl}>Video</StyledA>}
           {project.apkUrl && <StyledA href={project.apkUrl}>APK</StyledA>}
           {project.sourceUrl && (

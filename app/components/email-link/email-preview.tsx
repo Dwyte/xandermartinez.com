@@ -32,11 +32,14 @@ export function EmailPreview() {
 
   return (
     <TooltipProvider delayDuration={0}>
-      <div ref={previewRef} className="flex text-gray-400 bg-gray-950 fade-in">
+      <div
+        ref={previewRef}
+        className="flex text-neutral-400 bg-gray-950 fade-in"
+      >
         <Tooltip>
           <TooltipTrigger
             onClick={handleCopyEmail}
-            className="px-4 py-2 border-gray-600 border-1 mr-1 hover:border-gray-300 hover:text-gray-300 flex items-center gap-2 cursor-pointer"
+            className="px-4 py-2 border-gray-600 border-1 mr-1 hover:border-gray-300 hover:text-neutral-300 flex items-center gap-2 cursor-pointer"
           >
             {isCopied ? (
               <CheckCheck
@@ -65,7 +68,7 @@ export function EmailPreview() {
             <a
               href={`mailto:${EMAIL}`}
               target="_blank"
-              className="flex items-center px-3 py-2 border-1 border-gray-600 bg-gradient-to-r from-gray-950 to-gray-800 cursor-pointer hover:border-gray-300 hover:text-gray-200"
+              className="flex items-center px-3 py-2 border-1 border-gray-600 bg-gradient-to-r from-gray-950 to-gray-800 cursor-pointer hover:border-gray-300 hover:text-neutral-200"
             >
               <SendHorizonal
                 stroke="currentColor"
