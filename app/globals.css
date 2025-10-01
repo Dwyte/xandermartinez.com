@@ -27,6 +27,9 @@
   --font-sans: var(--font-geist-sans);
   --font-serif: var(--font-unna-serif);
   --font-mono: var(--font-geist-mono);
+
+  --color-primary-1: #e7b48a;
+  --color-secondary-1: #99ffe4;
 }
 
 .noise {
