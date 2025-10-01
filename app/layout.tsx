@@ -1,22 +1,27 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Unna } from "next/font/google";
+import {
+  Source_Sans_3 as SansSerif,
+  Geist_Mono as Mono,
+  Unna as Serif,
+} from "next/font/google";
 import "./globals.css";
 
 import { TITLE } from "./constants";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
-const unna = Unna({
+const sans = SansSerif({
   weight: "400",
-  variable: "--font-unna-serif",
+  variable: "--font-sans",
+  subsets: ["latin"],
+});
+
+const mono = Mono({
+  variable: "--font-mono",
+  subsets: ["latin"],
+});
+
+const serif = Serif({
+  weight: "400",
+  variable: "--font-serif",
   subsets: ["latin"],
 });
 
@@ -33,7 +38,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${unna.variable} antialiased relative`}
+        className={`${sans.variable} ${mono.variable} ${serif.variable} antialiased relative`}
       >
         {children}
         <div className="noise absolute w-full h-full top-0 opacity-10 saturate-200 pointer-events-none z-50"></div>

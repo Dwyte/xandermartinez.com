@@ -6,7 +6,7 @@ import { WorkSection } from "./components/work-section";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center px-8">
+    <div className="flex flex-col items-center px-8 font-sans">
       <div className="fade-out-overlay"></div>
       <div className="flex flex-col py-42 gap-20">
         <HeroSection />

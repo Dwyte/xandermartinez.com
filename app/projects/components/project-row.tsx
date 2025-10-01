@@ -29,9 +29,12 @@ export function ProjectRow({
     <div className="group/project flex flex-row gap-16">
       {/* Year. Only displayed on the first project (latest) of that year. */}
       <div
-        className={clsx("py-4 min-w-9 group-hover/list-item:text-neutral-400", {
-          invisible: isSameYearAsPrev,
-        })}
+        className={clsx(
+          "py-4 min-w-10 group-hover/list-item:text-neutral-400",
+          {
+            invisible: isSameYearAsPrev,
+          }
+        )}
       >
         {year}
       </div>
