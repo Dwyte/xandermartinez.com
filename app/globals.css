@@ -7,7 +7,7 @@
 
 @layer base {
   *::selection {
-    @apply bg-gray-100 text-gray-800;
+    @apply bg-neutral-100 text-neutral-800;
   }
 
   *:focus-visible {

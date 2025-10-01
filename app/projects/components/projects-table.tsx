@@ -30,7 +30,7 @@ export function ProjectsTable() {
           return (
             <StyledListItem
               className={clsx({
-                "border-t-[1px] border-t-gray-800/50": !isSameYearAsPrev,
+                "border-t-[1px] border-t-neutral-800/50": !isSameYearAsPrev,
               })}
               key={project.id}
             >

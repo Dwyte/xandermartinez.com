@@ -37,7 +37,7 @@ export function ProjectRow({
       </div>
       <div
         className={clsx("flex flex-row flex-1 gap-2", {
-          "border-t-[1px] border-t-gray-800/50": isSameYearAsPrev,
+          "border-t-[1px] border-t-neutral-800/50": isSameYearAsPrev,
         })}
       >
         {/* Project Title and Summary (displayed on hover) */}
