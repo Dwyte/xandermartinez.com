@@ -33,7 +33,7 @@ export function NowSection() {
               Showing up daily, refining my fundamentals and exploring new
               technologies. Focused on what matters,{" "}
               <StyledA
-                href="https://jamesclear.com/continuous-improvemena"
+                href="https://jamesclear.com/continuous-improvement"
                 className="inline"
               >
                 improving 1% each day
