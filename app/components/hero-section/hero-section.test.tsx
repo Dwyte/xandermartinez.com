@@ -10,18 +10,23 @@ describe("hero section", () => {
   });
 
   it("should render xandermartinez's Github link", () => {
-    const githubLink = screen.getByRole("link", { name: "Github" });
+    const githubLink = screen.getByRole("link", { name: /github/i });
+
     expect(githubLink).toBeInTheDocument();
     expect(githubLink).toHaveAttribute("href", GITHUB_URL);
     expect(githubLink).toHaveAttribute("target", "_blank");
   });
 
   it("should render xandermartinez's Linkedin link", () => {
-    const linkedinLink = screen.getByRole("link", { name: "LinkedIn" });
+    const linkedinLink = screen.getByRole("link", { name: /linkedin/i });
+
     expect(linkedinLink).toBeInTheDocument();
     expect(linkedinLink).toHaveAttribute("href", LINKEDIN_URL);
     expect(linkedinLink).toHaveAttribute("target", "_blank");
   });
 
-  it.todo("should render xandermartinez's email pop-over");
+  it("should render xandermartinez's email pop-over", () => {
+    const emailButton = screen.getByRole("button", { name: /email/i });
+    expect(emailButton).toBeInTheDocument();
+  });
 });
