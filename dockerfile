@@ -12,6 +12,9 @@ RUN npm ci --frozen-lockfile
 # Copy app source
 COPY . .
 
+# Run Tests
+RUN npm run test
+
 # Build the Next.js app
 RUN npm run build
 
