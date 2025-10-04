@@ -10,7 +10,7 @@ import { CheckCheck, ClipboardCopy, SendHorizonal } from "lucide-react";
 import { useState, useRef } from "react";
 import { StyledRadixTooltipContent } from "../styled-radix-tooltip-content";
 
-export function EmailPreview() {
+export function EmailPopoverContent() {
   const previewRef = useRef<HTMLDivElement | null>(null);
   const [isCopied, setIsCopied] = useState(false);
   const copyTimeout = useRef<number>(0);

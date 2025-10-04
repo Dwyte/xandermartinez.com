@@ -7,9 +7,9 @@ import {
   PopoverPortal,
   PopoverTrigger,
 } from "@radix-ui/react-popover";
-import { EmailPreview } from "./email-preview";
+import { EmailPopoverContent } from "./email-popover-content";
 
-export function EmailLink() {
+export function EmailPopover() {
   return (
     <Popover>
       <PopoverTrigger
@@ -26,7 +26,7 @@ export function EmailLink() {
           sideOffset={6}
           className="popover-content drop-shadow-md drop-shadow-black"
         >
-          <EmailPreview />
+          <EmailPopoverContent />
         </PopoverContent>
       </PopoverPortal>
     </Popover>

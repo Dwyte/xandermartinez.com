@@ -1,6 +1,6 @@
 import { TITLE, LINKEDIN_URL, GITHUB_URL } from "@/app/constants";
 import { StyledA } from "../styled-a";
-import { EmailLink } from "../email-link";
+import { EmailPopover } from "../email-popover";
 
 export function HeroSection() {
   return (
@@ -13,7 +13,7 @@ export function HeroSection() {
         maintainability.
       </p>
       <p className="text-lg text-neutral-500">
-        Get in touch via <EmailLink /> or{" "}
+        Get in touch via <EmailPopover /> or{" "}
         <StyledA href={LINKEDIN_URL}>LinkedIn</StyledA>, see my code on{" "}
         <span className="whitespace-nowrap">
           <StyledA href={GITHUB_URL}>Github</StyledA>.
