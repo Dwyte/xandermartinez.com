@@ -38,7 +38,7 @@ export const SIDE_PROJECTS: SideProject[] = [
     title: "Notflix",
     summary: "Browse and explore movies and tv shows",
     techstack: ["React", "Tailwind"],
-    url: "https://movie-app-one-sandy-27.vercel.app/",
+    url: "https://dwyte.github.io/movie-app",
     date: new Date("2025"),
     sourceUrl: "https://github.com/Dwyte/movie-app",
   },
