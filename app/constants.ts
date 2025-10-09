@@ -35,7 +35,7 @@ export const WORK_EXPRIENCES: WorkExperience[] = [
 export const SIDE_PROJECTS: SideProject[] = [
   {
     id: 0,
-    title: "Notflix",
+    title: "MovDex",
     summary: "Browse and explore movies and tv shows",
     techstack: ["React", "Tailwind"],
     url: "https://dwyte.github.io/movie-app",
