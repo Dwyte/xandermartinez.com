@@ -5,6 +5,7 @@ import {
   Unna as Serif,
 } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next";
 
 import { TITLE } from "./constants";
 
@@ -42,6 +43,7 @@ export default function RootLayout({
       >
         {children}
         <div className="noise absolute w-full h-full top-0 opacity-10 saturate-200 pointer-events-none z-50"></div>
+        <Analytics />
       </body>
     </html>
   );
