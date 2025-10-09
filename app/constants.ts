@@ -56,8 +56,9 @@ export const SIDE_PROJECTS: SideProject[] = [
     title: "IAM",
     summary: "Blockchain-based digital credentials system",
     techstack: ["React", "Express", "MongoDB", "NodeJS", "Solidity"],
-    url: "https://iam-web-client.herokuapp.com/",
-    sourceUrl: "https://github.com/Dwyte/iam-web-client",
+    url: "https://iam-web-client.vercel.app",
+    videoUrl:
+      "https://www.youtube.com/playlist?list=PLGec7BrCu62mic62OvZ58e0vq4dX6oU0I",
     date: new Date("2020"),
   },
   {
