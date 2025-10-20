@@ -1,7 +1,7 @@
 import { WORK_EXPRIENCES } from "@/app/constants";
-import { NumberedHeader } from "../numbered-header";
 import { StyledList, StyledListItem } from "../styled-list";
 import { StyledA } from "../styled-a";
+import { ContentHeading } from "../content-heading";
 
 function WorkItem({ work }: { work: WorkExperience }) {
   const fromDateStr = work.fromDate.toLocaleDateString("en-US", {
@@ -40,7 +40,7 @@ function WorkItem({ work }: { work: WorkExperience }) {
 export function WorkSection() {
   return (
     <div className="section">
-      <NumberedHeader number={1} content="Work" />
+      <ContentHeading prefix={"I"} title="Work" />
       <StyledList className="items-start">
         {WORK_EXPRIENCES.map((work) => (
           <StyledListItem key={work.id}>

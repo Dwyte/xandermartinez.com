@@ -1,13 +1,14 @@
 import { SIDE_PROJECTS } from "@/app/constants";
-import { NumberedHeader } from "../numbered-header";
-import { StyledA } from "../styled-a";
+import { ContentHeading } from "../content-heading";
+
 import { StyledList, StyledListItem } from "../styled-list";
 import { StyledLink } from "../styled-link";
+import { StyledA } from "../styled-a";
 
 export function ProjectsSection() {
   return (
     <div className="section">
-      <NumberedHeader number={2} content="Projects" />
+      <ContentHeading prefix="II" title="Projects" />
       <StyledList className="items-start">
         {SIDE_PROJECTS.slice(0, 3).map((project) => (
           <StyledListItem key={project.id}>

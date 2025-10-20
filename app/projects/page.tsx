@@ -1,4 +1,4 @@
-import { NumberedHeader } from "../components/numbered-header";
+import { ContentHeading } from "../components/content-heading";
 import { StyledLink } from "../components/styled-link";
 import { ProjectsTable } from "./components/projects-table";
 
@@ -12,7 +12,7 @@ export default function Project() {
         </StyledLink>
 
         <div className="flex flex-col gap-16 flex-1">
-          <NumberedHeader number={2} content="Projects" />
+          <ContentHeading headerTag="h1" prefix="II" title="Projects" />
           <ProjectsTable />
         </div>
       </div>

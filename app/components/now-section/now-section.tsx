@@ -1,11 +1,11 @@
 import { StyledA } from "../styled-a";
 import { HoverReveal } from "../hover-reveal";
-import { NumberedHeader } from "../numbered-header";
+import { ContentHeading } from "../content-heading";
 
 export function NowSection() {
   return (
     <section className="section leading-relaxed text-neutral-600 [&_strong]:font-normal [&_strong]:text-neutral-100">
-      <NumberedHeader number={3} content="Now" />
+      <ContentHeading prefix={"III"} title="Now" />
       <div>
         <p className="font-serif text-sm text-secondary-1 brightness-75 saturate-75 font-bold">
           As of July 15, 2025
