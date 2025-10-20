@@ -1,3 +1,4 @@
+import { CodeSandboxLogoIcon } from "@radix-ui/react-icons";
 import { ContentHeading } from "../components/content-heading";
 import { StyledLink } from "../components/styled-link";
 import { ProjectsTable } from "./components/projects-table";
@@ -12,7 +13,11 @@ export default function Project() {
         </StyledLink>
 
         <div className="flex flex-col gap-16 flex-1">
-          <ContentHeading headerTag="h1" prefix="II" title="Projects" />
+          <ContentHeading
+            headerTag="h1"
+            prefix={<CodeSandboxLogoIcon className="w-[3.6rem] h-[3.6rem]" />}
+            title="Projects"
+          />
           <ProjectsTable />
         </div>
       </div>
