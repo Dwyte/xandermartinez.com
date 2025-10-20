@@ -6,7 +6,11 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@radix-ui/react-tooltip";
-import { CheckCheck, ClipboardCopy, SendHorizonal } from "lucide-react";
+import {
+  CheckIcon,
+  ClipboardCopyIcon,
+  PaperPlaneIcon,
+} from "@radix-ui/react-icons";
 import { useState, useRef } from "react";
 import { StyledRadixTooltipContent } from "../styled-radix-tooltip-content";
 
@@ -16,7 +20,7 @@ export function EmailPopoverContent() {
   const copyTimeout = useRef<number>(0);
 
   async function handleCopyEmail(
-    event: React.MouseEvent<HTMLButtonElement, MouseEvent>
+    event: React.MouseEvent<HTMLButtonElement, MouseEvent>,
   ) {
     try {
       setIsCopied(false);
@@ -42,19 +46,9 @@ export function EmailPopoverContent() {
             className="px-4 py-2 border-neutral-600 border-1 mr-1 hover:border-neutral-300 hover:text-neutral-300 flex items-center gap-2 cursor-pointer"
           >
             {isCopied ? (
-              <CheckCheck
-                stroke="currentColor"
-                strokeWidth={2}
-                width="1em"
-                className="fade-in"
-              />
+              <CheckIcon className="fade-in" />
             ) : (
-              <ClipboardCopy
-                stroke="currentColor"
-                strokeWidth={2}
-                width="1em"
-                className="fade-in"
-              />
+              <ClipboardCopyIcon className="fade-in" />
             )}
             {EMAIL}
           </TooltipTrigger>
@@ -70,11 +64,7 @@ export function EmailPopoverContent() {
               target="_blank"
               className="flex items-center px-3 py-2 border-1 border-neutral-600 bg-gradient-to-r from-neutral-950 to-neutral-800 cursor-pointer hover:border-neutral-300 hover:text-neutral-200"
             >
-              <SendHorizonal
-                stroke="currentColor"
-                width="1em"
-                strokeWidth={2}
-              />
+              <PaperPlaneIcon />
             </a>
           </TooltipTrigger>
           <StyledRadixTooltipContent side="bottom" sideOffset={6}>

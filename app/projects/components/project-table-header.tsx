@@ -1,4 +1,4 @@
-import { ArrowLeftRight } from "lucide-react";
+import { ShuffleIcon } from "@radix-ui/react-icons";
 
 type ProjectTableHeaderProps = {
   isShowSummary: boolean;
@@ -19,11 +19,7 @@ export function ProjectTableHeader({
           className="cursor-pointer hover:brightness-150 transition-all"
         >
           {isShowSummary ? "About" : "Built with"}{" "}
-          <ArrowLeftRight
-            stroke="currentColor"
-            width="1em"
-            className="inline"
-          />{" "}
+          <ShuffleIcon className="inline" />{" "}
           <span className="text-neutral-800">
             {isShowSummary ? "Built with" : "About"}
           </span>

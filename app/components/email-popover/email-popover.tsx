@@ -1,5 +1,5 @@
 import React from "react";
-import { Mail } from "lucide-react";
+import { EnvelopeClosedIcon } from "@radix-ui/react-icons";
 
 import {
   Popover,
@@ -18,7 +18,7 @@ export function EmailPopover() {
         }
       >
         email
-        <Mail stroke="currentColor" strokeWidth={2} width="1em" />
+        <EnvelopeClosedIcon />
       </PopoverTrigger>
 
       <PopoverPortal>
