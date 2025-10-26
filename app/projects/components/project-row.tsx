@@ -43,12 +43,11 @@ export function ProjectRow({
           "border-t-[1px] border-t-neutral-800/50": isSameYearAsPrev,
         })}
       >
-        {/* Project Title and Summary (displayed on hover) */}
         <div className="flex-1 md:max-w-75 md:min-w-75 relative text-neutral-100 group-hover/list:text-neutral-500 group-hover/list-item:text-neutral-100">
           {title}
         </div>
 
-        {/* Techstack */}
+        {/* Techstack or Summary (Toggled) */}
         <div className="hidden md:flex flex-1 py-4 group-hover/list-item:text-neutral-400">
           {isShowSummary && project.summary}
 
