@@ -26,9 +26,24 @@ const serif = Serif({
   subsets: ["latin"],
 });
 
+const description = `${TITLE} is a software developer with experience in building web applications and tools. He has worked on a variety of projects, from freelance web development to creating custom tools for business optimization.`;
+
 export const metadata: Metadata = {
   title: TITLE,
-  description: "Portfolio Website",
+  description,
+  openGraph: {
+    title: TITLE,
+    description,
+    url: "https://xandermartinez.com",
+    siteName: TITLE,
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: TITLE,
+    description,
+  },
 };
 
 export default function RootLayout({

@@ -2,6 +2,12 @@ import { CodeSandboxLogoIcon } from "@radix-ui/react-icons";
 import { ContentHeading } from "../components/content-heading";
 import { StyledLink } from "../components/styled-link";
 import { ProjectsTable } from "./components/projects-table";
+import { Metadata } from "next";
+import { TITLE } from "../constants";
+
+export const metadata: Metadata = {
+  title: `${TITLE} | Projects`,
+};
 
 export default function Project() {
   return (
