@@ -10,7 +10,7 @@ export function ProjectsSection() {
     <div className="section">
       <ContentHeading prefix="II" title="Projects" />
       <StyledList className="items-start">
-        {SIDE_PROJECTS.slice(0, 3).map((project) => (
+        {SIDE_PROJECTS.slice(0, 2).map((project) => (
           <StyledListItem key={project.id}>
             <div className="flex flex-col gap-1">
               <h3 className="text-xl font-semibold font-serif text-neutral-400 group-hover/list:text-neutral-600 group-hover/list-item:text-neutral-100">
