@@ -9,34 +9,46 @@ export const QUOTES = [
   "Trust the process of becoming.",
 ];
 
+export const HEADLINE =
+  "Full-Stack Engineer. Building scalable and high performance web applications.";
+
 export const WORK_EXPRIENCES: WorkExperience[] = [
-  {
-    id: 0,
-    fromDate: new Date("November 2022"),
-    toDate: "Present",
-    company: "DFAB Shop",
-    url: "https://shopee.ph/the_fabshoppe",
-    location: "Remote",
-    position: "Owner, Web Developer",
-    summary: "Optimized business operations through custom web-based tools",
-  },
   {
     id: 1,
     fromDate: new Date("November 2019"),
-    toDate: new Date("March 2021"),
-    company: "Freelance",
+    toDate: "Present",
+    company: "Freelance / Self Employed",
     location: "Remote",
     position: "Full Stack Web Developer",
     summary:
-      "Streamlined client’s forex trading workflow with a custom all-in-one terminal",
+      "Built full-stack software solutions for clients across Finance, Web3, and E-commerce.",
   },
 ];
 
 export const SIDE_PROJECTS: SideProject[] = [
   {
+    id: 13,
+    title: "ENLint",
+    summary:
+      "AI-powered speech analysis tool powered by Google Gemini and multi-modal context processing.",
+    techstack: ["React", "Gemini", "NestJS"],
+    date: new Date("2025"),
+  },
+  {
+    id: 2,
+    title: "IAM",
+    summary: "Blockchain-based digital credentials system built on Ethereum",
+    techstack: ["React", "Express", "MongoDB", "NodeJS", "Solidity"],
+    url: "https://iam-web-client.vercel.app",
+    videoUrl:
+      "https://www.youtube.com/playlist?list=PLGec7BrCu62mic62OvZ58e0vq4dX6oU0I",
+    date: new Date("2020"),
+  },
+  {
     id: 0,
     title: "MovDex",
-    summary: "Browse and explore movies and tv shows",
+    summary:
+      "High-performance media explorer featuring client-side caching and a custom brutalist design system.",
     techstack: ["React", "Tailwind"],
     url: "https://dwyte.github.io/movie-app",
     date: new Date("2025"),
@@ -50,16 +62,6 @@ export const SIDE_PROJECTS: SideProject[] = [
     url: "https://dwyte.github.io/sorting-visualized/",
     date: new Date("2021"),
     sourceUrl: "https://github.com/Dwyte/sorting-visualized",
-  },
-  {
-    id: 2,
-    title: "IAM",
-    summary: "Blockchain-based digital credentials system",
-    techstack: ["React", "Express", "MongoDB", "NodeJS", "Solidity"],
-    url: "https://iam-web-client.vercel.app",
-    videoUrl:
-      "https://www.youtube.com/playlist?list=PLGec7BrCu62mic62OvZ58e0vq4dX6oU0I",
-    date: new Date("2020"),
   },
   {
     id: 3,
