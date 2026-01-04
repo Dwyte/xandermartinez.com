@@ -2,6 +2,7 @@ import { WORK_EXPRIENCES } from "@/app/constants";
 import { StyledList, StyledListItem } from "../styled-list";
 import { StyledA } from "../styled-a";
 import { ContentHeading } from "../content-heading";
+import { StyledLink } from "../styled-link";
 
 function WorkItem({ work }: { work: WorkExperience }) {
   const fromDateStr = work.fromDate.toLocaleDateString("en-US", {
@@ -48,6 +49,15 @@ export function WorkSection() {
           </StyledListItem>
         ))}
       </StyledList>
+
+      <StyledA
+        className="text-sm"
+        href="/Xander_Martinez_Full_Stack_Engineer_Resume_Public.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Download Resume
+      </StyledA>
     </div>
   );
 }
