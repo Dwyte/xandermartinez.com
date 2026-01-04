@@ -8,51 +8,51 @@ export function NowSection() {
       <ContentHeading prefix={"III"} title="Now" />
       <div>
         <p className="font-serif text-sm text-secondary-1 brightness-75 saturate-75 font-bold">
-          As of July 15, 2025
+          As of Jan 2026
         </p>
         <div className="[&>p]:mb-4">
           <p>
-            Running my own business taught me valuable lessons, but it also
-            reminded me where I do my best work—
+            After years of freelancing and building my own ventures, I learned a
+            crucial lesson
+            <br />
             <span className="text-neutral-400">
-              &nbsp;creating solutions through software.
+              —I can move fast alone, but I can go much further with a team.
             </span>
           </p>
           <p>
-            Now,{" "}
             <strong>
-              I&apos;m piecing things together again, focused on getting back
-              into tech
+              While I value the independence of entrepreneurship, I realized
+              I’ve been missing the collaborative friction and shared knowledge
+              that only exist in high-performance engineering cultures. I am
+              ready to immerse myself in a collaborative team where I can tackle
+              complex problems at scale.
             </strong>
-            ,{" "}
-            <HoverReveal>
-              and crossing my fingers I&apos;m not too late in this AI-driven
-              world.
-            </HoverReveal>{" "}
+          </p>
+          <p>
+            Currently,{" "}
             <strong>
-              Showing up daily, refining my fundamentals and exploring new
-              technologies. Focused on what matters,{" "}
-              <StyledA
-                href="https://jamesclear.com/continuous-improvement"
-                className="inline"
-              >
-                improving 1% each day
-              </StyledA>
+              I am deep diving into integrating AI APIs{" — "}
+              <HoverReveal>
+                hoping robots don&apos;t replace me just yet lol
+              </HoverReveal>
+              {" — "}
+              and NestJS, expanding my technical toolkit and preparing to
+              contribute to a team where iron sharpens iron.
             </strong>
-            ,{" "}
-            <HoverReveal>
-              and reminding myself of this whenever I feel behind.
-            </HoverReveal>
           </p>
           <p>
             When I&apos;m AFK, I&apos;m learning balance by being physically
-            active, investing in the people I care about, and treating my health
-            as seriously as my work.
+            active,{" "}
+            <HoverReveal>
+              trying to undo years of &quot;shrimp posture&quot;
+            </HoverReveal>
+            , investing in the people I care about, and treating my health as
+            seriously as my work.
           </p>
           <p>
             <strong>
-              Along the way, I&apos;m open to opportunities where I can learn,
-              grow, and contribute.
+              I&apos;m currently open to roles where I can build impactful
+              software and contribute to a high-performance team.
             </strong>
           </p>
         </div>
